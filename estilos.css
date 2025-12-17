@@ -356,61 +356,63 @@ footer {
 }
 
 /* ---------- CELULARES ---------- */
+/* ---------- CELULARES ---------- */
 @media (max-width: 768px) {
 
     header {
-        padding: 2rem 1rem;
+        padding: 1.6rem 0.8rem;
     }
 
     header h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
 
-    /* NAV IGUAL QUE PC (NO COLUMNA) */
+    /* NAV MÁS PEQUEÑO Y COMPACTO */
     nav {
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 10px;
-        padding: 0.6rem;
+        gap: 6px;
+        padding: 0.4rem;
     }
 
     nav a {
         width: auto;
-        padding: 6px 12px;
-        font-size: 0.9rem;
-        border-radius: 8px;
+        padding: 4px 10px;
+        font-size: 0.8rem;
+        border-radius: 6px;
     }
 
     main {
-        margin: 2.5rem auto;
+        margin: 2rem auto;
     }
 
     section {
-        padding: 1.8rem;
-        border-radius: 16px;
+        padding: 1.5rem;
+        border-radius: 14px;
     }
 
     section h2 {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
     }
 
     button {
         width: 100%;
-        padding: 0.9rem;
-        font-size: 1rem;
+        padding: 0.75rem;
+        font-size: 0.95rem;
     }
 
     .social-links {
-        gap: 18px;
+        gap: 14px;
     }
 
     .social-links a {
-        width: 52px;
-        height: 52px;
-        font-size: 1.4rem;
+        width: 46px;
+        height: 46px;
+        font-size: 1.2rem;
     }
 }
+
 
 
 /* ---------- CELULARES PEQUEÑOS ---------- */
@@ -494,5 +496,6 @@ li {
             0 0 24px rgba(26,188,156,0.4);
     }
 }
+
 
 
