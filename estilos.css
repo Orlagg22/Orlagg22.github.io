@@ -1,0 +1,493 @@
+/* =========================
+   RESET + SCROLL SUAVE
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================
+   BODY BASE
+   ========================= */
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #eaeaea;
+    line-height: 1.6;
+    background: radial-gradient(circle at top, #0f2027, #000);
+    overflow-x: hidden;
+    animation: fadeBody 1.2s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+/* =========================
+   CANVAS PARTÍCULAS
+   ========================= */
+
+#particles {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* =========================
+   BORDE RGB DE TODA LA PÁGINA
+   ========================= */
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    padding: 4px;
+    background: linear-gradient(
+        270deg,
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        violet,
+        red
+    );
+    background-size: 600% 600%;
+    animation: rgbBorderPage 10s linear infinite;
+    pointer-events: none;
+    z-index: 0;
+
+    -webkit-mask:
+        linear-gradient(#000 0 0) content-box,
+        linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+/* =========================
+   LOADER ANIMADO
+   ========================= */
+
+#loader {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+#loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-circle {
+    width: 80px;
+    height: 80px;
+    border: 5px solid rgba(255,255,255,0.2);
+    border-top: 5px solid #1abc9c;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    box-shadow: 0 0 25px #1abc9c;
+}
+
+/* =========================
+   ANIMACIONES
+   ========================= */
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes fadeBody {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(60px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes rgbBorderPage {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    padding: 3rem 1rem;
+    text-align: center;
+    animation: slideDown 1s ease forwards;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.6rem;
+    text-shadow: 0 0 15px rgba(26, 188, 156, 0.5);
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+nav {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #eaeaea;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #1abc9c;
+    color: #031f1b;
+    box-shadow: 0 0 15px #1abc9c;
+}
+
+/* =========================
+   MAIN
+   ========================= */
+
+main {
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+/* =========================
+   HOVER ILUMINADO SECCIONES
+   ========================= */
+
+section {
+    position: relative;
+    transition:
+        box-shadow 0.4s ease,
+        background-color 0.4s ease;
+}
+
+/* Solo en dispositivos con mouse */
+@media (hover: hover) {
+    section:hover {
+        box-shadow:
+            0 0 0 2px rgba(26,188,156,0.9),
+            0 0 35px rgba(26,188,156,0.65),
+            inset 0 0 20px rgba(26,188,156,0.18);
+
+        background-color: rgba(26,188,156,0.05);
+    }
+}
+
+/* =========================
+   CONTACTO - REDES SOCIALES
+   ========================= */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1abc9c;
+    font-size: 1.6rem;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    box-shadow: 0 0 15px rgba(26,188,156,0.4);
+}
+
+.social-links a:hover {
+    transform: scale(1.15) rotate(5deg);
+    background: #1abc9c;
+    color: #031f1b;
+    box-shadow: 0 0 25px #1abc9c;
+}
+
+/* =========================
+   BOTONES MEJORADOS
+   ========================= */
+
+button {
+    position: relative;
+    padding: 0.8rem 2.2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #031f1b;
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    box-shadow:
+        0 10px 25px rgba(26,188,156,0.35);
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.5),
+        transparent
+    );
+    transition: all 0.6s ease;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow:
+        0 15px 35px rgba(26,188,156,0.6),
+        0 0 25px rgba(26,188,156,0.8);
+}
+
+button:hover::before {
+    left: 120%;
+}
+
+button:active {
+    transform: scale(0.97);
+    box-shadow: 0 5px 15px rgba(26,188,156,0.4);
+}
+
+button:disabled {
+    background: #555;
+    color: #aaa;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: #0b1d26;
+    color: #bfc9ca;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* ---------- PANTALLAS GRANDES (PC) ---------- */
+@media (min-width: 1200px) {
+
+    header h1 {
+        font-size: 3rem;
+    }
+
+    section {
+        padding: 3rem;
+    }
+
+    main {
+        max-width: 1200px;
+    }
+}
+
+/* ---------- TABLETS ---------- */
+@media (max-width: 1024px) {
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    section {
+        padding: 2rem;
+    }
+}
+
+/* ---------- CELULARES ---------- */
+@media (max-width: 768px) {
+
+    header {
+        padding: 2rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    main {
+        margin: 2.5rem auto;
+    }
+
+    section {
+        padding: 1.8rem;
+        border-radius: 16px;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    /* Botones */
+    button {
+        width: 100%;
+        padding: 0.9rem;
+        font-size: 1rem;
+    }
+
+    /* Redes sociales */
+    .social-links {
+        gap: 18px;
+    }
+
+    .social-links a {
+        width: 52px;
+        height: 52px;
+        font-size: 1.4rem;
+    }
+}
+
+/* ---------- CELULARES PEQUEÑOS ---------- */
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    section {
+        padding: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+        padding: 1.2rem;
+    }
+}
+
+/* ---------- MEJORA DE RENDIMIENTO MÓVIL ---------- */
+@media (max-width: 768px) {
+
+    /* Reduce blur en móviles para mejor rendimiento */
+    section {
+        backdrop-filter: blur(6px);
+    }
+
+    nav {
+        backdrop-filter: blur(6px);
+    }
+
+    /* Reduce intensidad del borde RGB */
+    body::after {
+        animation-duration: 16s;
+        padding: 3px;
+    }
+}
+
+/* =========================
+   TEXTO ILUMINADO AL HOVER
+   ========================= */
+
+/* Aplica a títulos y párrafos */
+h1, h2, h3, p, label {
+    transition:
+        color 0.35s ease,
+        text-shadow 0.35s ease;
+}
+
+/* Solo dispositivos con mouse */
+@media (hover: hover) {
+    h1:hover,
+    h2:hover,
+    h3:hover,
+    p:hover,
+    label:hover {
+        color: #1abc9c;
+        text-shadow:
+            0 0 6px rgba(26,188,156,0.7),
+            0 0 14px rgba(26,188,156,0.6),
+            0 0 24px rgba(26,188,156,0.4);
+    }
+}
+li {
+    transition:
+        color 0.35s ease,
+        text-shadow 0.35s ease;
+}
+
+/* Solo dispositivos con mouse */
+@media (hover: hover) {
+    li:hover {
+        color: #1abc9c;
+        text-shadow:
+            0 0 6px rgba(26,188,156,0.7),
+            0 0 14px rgba(26,188,156,0.6),
+            0 0 24px rgba(26,188,156,0.4);
+    }
+}
+

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Personal | Orlando</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-circle"></div>
+    </div>
+
+    <!-- PARTÍCULAS -->
+    <canvas id="particles"></canvas>
+
+    <!-- HEADER -->
+    <header>
+        <h1><strong>Hola, soy Orlando</strong></h1>
+        <h1><strong>Bienvenido a mi sitio web</strong></h1>
+        <p>Desarrollador en formación • Tecnología • Creatividad</p>
+    </header>
+
+    <!-- NAV -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca de mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- INICIO -->
+        <section id="inicio">
+            <h2>Inicio</h2>
+            <p>
+                Este sitio web fue creado como una presentación personal
+                donde muestro quién soy, mis intereses y algunos de los
+                proyectos que he desarrollado en el área de tecnología
+                y programación.
+            </p>
+        </section>
+
+        <!-- ACERCA DE MI -->
+        <section id="acerca">
+            <h2>Acerca de mí</h2>
+            <p>
+                Mi nombre es <strong>Orlando</strong> y me interesa el mundo de la
+                tecnología, el desarrollo web y la programación.
+                Disfruto aprender cómo funcionan las cosas y crear
+                proyectos que combinen diseño, lógica y creatividad.
+            </p>
+            <p>
+                He trabajado con <strong>HTML, CSS, JavaScript, C, C++ y</strong>,
+                desarrollando páginas web, programas básicos y proyectos escolares.
+                Me gusta experimentar con animaciones, efectos visuales,
+                interfaces modernas y experiencias interactivas.
+            </p>
+            <p>
+                Mi objetivo es seguir aprendiendo, mejorar mis habilidades
+                y desarrollar proyectos cada vez más completos y profesionales.
+            </p>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+
+            <p>
+                A lo largo de mi aprendizaje he realizado distintos proyectos,
+                tanto académicos como personales, entre ellos:
+            </p>
+
+            <ul>
+                <li>Páginas web personales con diseño moderno y modo oscuro</li>
+                <li>Sitios web temáticos (cafeterías, bandas musicales, dulcerías)</li>
+                <li>Programas en lenguaje C con menús y estructuras de control</li>
+                <li>Animaciones, efectos RGB y fondos interactivos con JavaScript</li>
+            </ul>
+
+        </section>
+
+       <section id="contacto" class="contact-section">
+    <h2>Contacto</h2>
+    <p class="contact-text">
+        ¿Tienes alguna pregunta, propuesta o simplemente quieres contactarme?
+        Puedes enviarme un mensaje directamente o encontrarme en mis redes sociales.
+    </p>
+
+    <div class="contact-container">
+
+        <!-- FORMULARIO -->
+       <div class="contact-form-box">
+    <h3>Envíame un mensaje</h3>
+
+    <form action="https://formsubmit.co/oruiz6446@gmail.com" method="POST">
+        <!-- Configuración FormSubmit -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde tu página web">
+
+        <!-- Respuesta automática -->
+        <input 
+            type="hidden" 
+            name="_autoresponse" 
+            value="Gracias por contactarme. He recibido tu mensaje y te responderé lo antes posible.">
+
+        <div class="input-group">
+            <input type="text" name="nombre" required>
+            <label>Nombre</label>
+        </div>
+
+        <div class="input-group">
+            <input 
+                type="email" 
+                name="email" 
+                placeholder="Tu correo electrónico"
+                required>
+            <label>Correo electrónico</label>
+        </div>
+
+        <div class="input-group">
+            <textarea name="mensaje" rows="2" required></textarea>
+            <label>Mensaje</label>
+        </div>
+
+        <button type="submit">Enviar mensaje</button>
+    </form>
+
+    <p>
+        ¡Estoy abierto a colaboraciones, sugerencias y nuevas oportunidades!
+        No dudes en contactarme.
+    </p>
+</div>
+        <!-- INFO + REDES -->
+        <div class="contact-info-box">
+            <h3>También puedes encontrarme en:</h3>
+
+            <div class="social-links">
+                <a href="https://www.instagram.com/gro_rlrg?igsh=Zzd3Yjg5bTBrdnc3" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://www.facebook.com/share/1HMjJeUFmo/" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <a href="https://wa.me/message/NCUOXWMXBCANF1" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <a href="https://github.com/Orlagg22" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 OGGR22. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JS LOADER -->
+    <script>
+        window.addEventListener("load", () => {
+            document.getElementById("loader").classList.add("hidden");
+        });
+    </script>
+
+    <!-- JS PARTÍCULAS -->
+    <script>
+        const canvas = document.getElementById("particles");
+        const ctx = canvas.getContext("2d");
+
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        let particles = [];
+        let mouse = { x: null, y: null, radius: 120 };
+
+        window.addEventListener("mousemove", e => {
+            mouse.x = e.x;
+            mouse.y = e.y;
+        });
+
+        window.addEventListener("resize", () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 1;
+                this.speedX = Math.random() * 1 - 0.5;
+                this.speedY = Math.random() * 1 - 0.5;
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                let dx = mouse.x - this.x;
+                let dy = mouse.y - this.y;
+                let dist = Math.sqrt(dx * dx + dy * dy);
+
+                if (dist < mouse.radius) {
+                    this.x -= dx / 10;
+                    this.y -= dy / 10;
+                }
+            }
+            draw() {
+                ctx.fillStyle = "#00ffc8";
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function init() {
+            particles = [];
+            for (let i = 0; i < 140; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animate);
+        }
+
+        init();
+        animate();
+    </script>
+
+</body>
+
+</html>
