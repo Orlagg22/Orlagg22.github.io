@@ -366,15 +366,20 @@ footer {
         font-size: 1.8rem;
     }
 
+    /* NAV IGUAL QUE PC (NO COLUMNA) */
     nav {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0.6rem;
     }
 
     nav a {
-        width: 100%;
-        text-align: center;
-        padding: 12px;
+        width: auto;
+        padding: 6px 12px;
+        font-size: 0.9rem;
+        border-radius: 8px;
     }
 
     main {
@@ -390,14 +395,12 @@ footer {
         font-size: 1.6rem;
     }
 
-    /* Botones */
     button {
         width: 100%;
         padding: 0.9rem;
         font-size: 1rem;
     }
 
-    /* Redes sociales */
     .social-links {
         gap: 18px;
     }
@@ -408,6 +411,7 @@ footer {
         font-size: 1.4rem;
     }
 }
+
 
 /* ---------- CELULARES PEQUEÑOS ---------- */
 @media (max-width: 480px) {
@@ -490,4 +494,5 @@ li {
             0 0 24px rgba(26,188,156,0.4);
     }
 }
+
 
