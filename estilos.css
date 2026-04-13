@@ -1058,66 +1058,7 @@ footer {
     }
 }
 
-/* CELULARES */
-@media (max-width: 768px) {
-
-    /* NAVBAR */
-    .nav-toggle {
-        display: flex;
-    }
-
-    .nav-menu {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 70%;
-        height: 100vh;
-        background: var(--bg-darker);
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-        transition: var(--transition);
-    }
-
-    .nav-menu.active {
-        right: 0;
-    }
-
-    /* HERO */
-    .hero-section {
-        padding: 80px 15px;
-    }
-
-    .hero-title {
-        font-size: 2rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.3rem;
-    }
-
-    /* SECCIONES */
-    .section {
-        padding: 80px 15px;
-    }
-
-    /* SKILLS */
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* PROYECTOS */
-    .projects-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* BOTÓN */
-    .back-to-top {
-        bottom: 20px;
-        right: 20px;
-    }
-}
-@media (max-width: 768px) {
+@media (max-width: 430px) {
 
     .nav-toggle {
         display: flex !important;
@@ -1130,7 +1071,7 @@ footer {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 70%;
+        width: 75%;
         height: 100vh;
         background: #050709;
         flex-direction: column;
@@ -1142,5 +1083,10 @@ footer {
 
     .nav-menu.active {
         right: 0;
+    }
+
+    /* OPCIONAL: ocultar menú normal */
+    .nav-menu a {
+        font-size: 1.2rem;
     }
 }
