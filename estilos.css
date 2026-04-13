@@ -1036,4 +1036,5 @@ footer {
     justify-content: center;
     color: var(--bg-dark);
     font-size: 1.2rem;
-    z
+    z-index: 999;
+}
