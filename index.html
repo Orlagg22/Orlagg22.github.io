@@ -1,16 +1,18 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de Orlando - Desarrollador web y programador. Proyectos, habilidades y contacto.">
+    <meta name="keywords" content="Orlando, portfolio, desarrollador web, programacion, HTML, CSS, JavaScript, C, C++">
+    <meta name="author" content="Orlando">
     <title>Mi Página Personal | Orlando</title>
 
     <!-- CSS -->
     <link rel="stylesheet" href="estilos.css">
 
     <!-- ICONOS -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -18,238 +20,379 @@
     <!-- LOADER -->
     <div id="loader">
         <div class="loader-circle"></div>
+        <div class="loader-text">
+            <span class="loading-dot">C</span>
+            <span class="loading-dot">a</span>
+            <span class="loading-dot">r</span>
+            <span class="loading-dot">g</span>
+            <span class="loading-dot">a</span>
+            <span class="loading-dot">n</span>
+            <span class="loading-dot">d</span>
+            <span class="loading-dot">o</span>
+            <span class="loading-suffix">...</span>
+        </div>
     </div>
 
     <!-- PARTÍCULAS -->
     <canvas id="particles"></canvas>
 
-    <!-- HEADER -->
-    <header>
-        <h1><strong>Hola, soy Orlando</strong></h1>
-        <h1><strong>Bienvenido a mi sitio web</strong></h1>
-        <p>Desarrollador en formación • Tecnología • Creatividad</p>
-    </header>
-
-    <!-- NAV -->
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#acerca">Acerca de mí</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-
-    <!-- MAIN -->
-    <main>
-
-        <!-- INICIO -->
-        <section id="inicio">
-            <h2>Inicio</h2>
-            <p>
-                Este sitio web fue creado como una presentación personal
-                donde muestro quién soy, mis intereses y algunos de los
-                proyectos que he desarrollado en el área de tecnología
-                y programación.
-            </p>
-        </section>
-
-        <!-- ACERCA DE MI -->
-        <section id="acerca">
-            <h2>Acerca de mí</h2>
-            <p>
-                Mi nombre es <strong>Orlando</strong> y me interesa el mundo de la
-                tecnología, el desarrollo web y la programación.
-                Disfruto aprender cómo funcionan las cosas y crear
-                proyectos que combinen diseño, lógica y creatividad.
-            </p>
-            <p>
-                He trabajado con <strong>HTML, CSS, JavaScript, C, C++ y</strong>,
-                desarrollando páginas web, programas básicos y proyectos escolares.
-                Me gusta experimentar con animaciones, efectos visuales,
-                interfaces modernas y experiencias interactivas.
-            </p>
-            <p>
-                Mi objetivo es seguir aprendiendo, mejorar mis habilidades
-                y desarrollar proyectos cada vez más completos y profesionales.
-            </p>
-        </section>
-
-        <!-- PROYECTOS -->
-        <section id="proyectos">
-            <h2>Proyectos</h2>
-
-            <p>
-                A lo largo de mi aprendizaje he realizado distintos proyectos,
-                tanto académicos como personales, entre ellos:
-            </p>
-
-            <ul>
-                <li>Páginas web personales con diseño moderno y modo oscuro</li>
-                <li>Sitios web temáticos (cafeterías, bandas musicales, dulcerías)</li>
-                <li>Programas en lenguaje C con menús y estructuras de control</li>
-                <li>Animaciones, efectos RGB y fondos interactivos con JavaScript</li>
-            </ul>
-
-        </section>
-
-       <section id="contacto" class="contact-section">
-    <h2>Contacto</h2>
-    <p class="contact-text">
-        ¿Tienes alguna pregunta, propuesta o simplemente quieres contactarme?
-        Puedes enviarme un mensaje directamente o encontrarme en mis redes sociales.
-    </p>
-
-    <div class="contact-container">
-
-        <!-- FORMULARIO -->
-       <div class="contact-form-box">
-    <h3>Envíame un mensaje</h3>
-
-    <form action="https://formsubmit.co/oruiz6446@gmail.com" method="POST">
-        <!-- Configuración FormSubmit -->
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_subject" value="Nuevo mensaje desde tu página web">
-
-        <!-- Respuesta automática -->
-        <input 
-            type="hidden" 
-            name="_autoresponse" 
-            value="Gracias por contactarme. He recibido tu mensaje y te responderé lo antes posible.">
-
-        <div class="input-group">
-            <input type="text" name="nombre" required>
-            <label>Nombre</label>
-        </div>
-
-        <div class="input-group">
-            <input 
-                type="email" 
-                name="email" 
-                placeholder="Tu correo electrónico"
-                required>
-            <label>Correo electrónico</label>
-        </div>
-
-        <div class="input-group">
-            <textarea name="mensaje" rows="2" required></textarea>
-            <label>Mensaje</label>
-        </div>
-
-        <button type="submit">Enviar mensaje</button>
-    </form>
-</div>
-        <!-- INFO + REDES -->
-        <div class="contact-info-box">
-            <h3>También puedes encontrarme en:</h3>
-
-            <div class="social-links">
-                <a href="https://www.instagram.com/gro_rlrg?igsh=Zzd3Yjg5bTBrdnc3" target="_blank" title="Instagram">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <a href="https://www.facebook.com/share/1HMjJeUFmo/" target="_blank" title="Facebook">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-
-                <a href="https://wa.me/message/NCUOXWMXBCANF1" target="_blank" title="WhatsApp">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
-
-                <a href="https://github.com/Orlagg22" target="_blank" title="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="main-wrapper">
+        
+        <!-- HEADER CON PARALLAX -->
+        <header class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <strong>Hola, soy Orlando</strong>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <strong id="typing-text"></strong>
+                </h2>
+                <p class="hero-description">Desarrollador en formación • Tecnología • Creatividad</p>
+                <div class="scroll-indicator">
+                    <span>Desliza para explorar</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
             </div>
+            <div class="hero-overlay"></div>
+        </header>
 
-        </div>
+        <!-- NAV -->
+        <nav class="navbar" id="navbar">
+            <button class="nav-toggle" id="nav-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#inicio" class="nav-link active" data-tooltip="Sección de inicio">
+                    <i class="fas fa-home"></i>
+                    <span>Inicio</span>
+                </a>
+                <a href="#acerca" class="nav-link" data-tooltip="Conóceme mejor">
+                    <i class="fas fa-user"></i>
+                    <span>Acerca de mí</span>
+                </a>
+                <a href="#habilidades" class="nav-link" data-tooltip="Misstack tecnológico">
+                    <i class="fas fa-code"></i>
+                    <span>Habilidades</span>
+                </a>
+                <a href="#proyectos" class="nav-link" data-tooltip="Mis proyectos">
+                    <i class="fas fa-folder-open"></i>
+                    <span>Proyectos</span>
+                </a>
+                <a href="#contacto" class="nav-link" data-tooltip="Contáctame">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contacto</span>
+                </a>
+            </div>
+            <div class="scroll-progress" id="scroll-progress"></div>
+        </nav>
 
-    </div>
-</section>
+        <!-- MAIN -->
+        <main>
 
-    </main>
+            <!-- INICIO -->
+            <section id="inicio" class="section">
+                <div class="section-header scroll-animate">
+                    <h2 class="section-title">Inicio</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="section-content scroll-animate">
+                    <p class="intro-text">
+                        Bienvenido a mi espacio digital. Este sitio web fue creado como una 
+                        <strong class="highlight">presentación personal</strong> donde muestro quién soy, 
+                        mis intereses y algunos de los proyectos que he desarrollado en el área de 
+                        <strong class="highlight">tecnología</strong> y <strong class="highlight">programación</strong>.
+                    </p>
+                    <p class="intro-text">
+                        Aquí encontrarás información sobre mi formación profesional, los 
+                        <strong class="highlight">lenguajes de programación</strong> que manejo, 
+                        trabajos realizados y cómo contactarme si deseas colaborar en futuros proyectos.
+                    </p>
+                    <div class="cta-container">
+                        <a href="#proyectos" class="cta-button">
+                            <i class="fas fa-rocket"></i>
+                            Ver mis proyectos
+                        </a>
+                        <a href="#contacto" class="cta-button secondary">
+                            <i class="fas fa-paper-plane"></i>
+                            Contáctame
+                        </a>
+                    </div>
+                </div>
+            </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2025 OGGR22. Todos los derechos reservados.</p>
-    </footer>
+            <!-- ACERCA DE MI -->
+            <section id="acerca" class="section alt-section">
+                <div class="section-header scroll-animate">
+                    <h2 class="section-title">Acerca de mí</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="section-content scroll-animate">
+                    <div class="about-content">
+                        <div class="about-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                Mi nombre es <strong>Orlando</strong> y me apasiona el mundo de la
+                                tecnología, el desarrollo web y la programación.
+                                Disfruto aprender cómo funcionan las cosas y crear
+                                proyectos que combinen <strong class="highlight">diseño</strong>, 
+                                <strong class="highlight">lógica</strong> y <strong class="highlight">creatividad</strong>.
+                            </p>
+                            <p>
+                                He trabajado con <strong>HTML, CSS, JavaScript, C, C++</strong>,
+                                desarrollando páginas web, programas básicos y proyectos escolares.
+                                Me gusta experimentar con animaciones, efectos visuales,
+                                interfaces modernas y experiencias interactivas.
+                            </p>
+                            <p>
+                                Mi objetivo es seguir aprendiendo, mejorar mis habilidades
+                                y desarrollar proyectos cada vez más completos y profesionales,
+                                colaborando con otros desarrolladores y creando soluciones innovadoras.
+                            </p>
+                            <div class="about-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number" data-target="10">0</span>
+                                    <span class="stat-label">Proyectos</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number" data-target="5">0</span>
+                                    <span class="stat-label">Lenguajes</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number" data-target="3">0</span>
+                                    <span class="stat-label">Años</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-    <!-- JS LOADER -->
-    <script>
-        window.addEventListener("load", () => {
-            document.getElementById("loader").classList.add("hidden");
-        });
-    </script>
+            <!-- HABILIDADES -->
+            <section id="habilidades" class="section">
+                <div class="section-header scroll-animate">
+                    <h2 class="section-title">Habilidades</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="section-content scroll-animate">
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">C</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">C++</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Diseño Responsivo</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Git</span>
+                                <span class="skill-percent">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header">
+                                <span class="skill-name">Resolución de Problemas</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- JS PARTÍCULAS -->
-    <script>
-        const canvas = document.getElementById("particles");
-        const ctx = canvas.getContext("2d");
+                    <!-- INTERESES -->
+                    <div class="interests-section">
+                        <h3 class="interests-title">Areas de Interés</h3>
+                        <div class="interests-grid">
+                            <div class="interest-card">
+                                <div class="interest-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <h4>Desarrollo Web</h4>
+                                <p>Crear sitios interactivos y experiencias digitales únicas.</p>
+                            </div>
+                            <div class="interest-card">
+                                <div class="interest-icon">
+                                    <i class="fas fa-terminal"></i>
+                                </div>
+                                <h4>Programación</h4>
+                                <p>Algoritmos, estructuras de datos y diseño de software.</p>
+                            </div>
+                            <div class="interest-card">
+                                <div class="interest-icon">
+                                    <i class="fas fa-paint-brush"></i>
+                                </div>
+                                <h4>Diseño UI/UX</h4>
+                                <p>Interfaces intuitivas y experiencias de usuario memorables.</p>
+                            </div>
+                            <div class="interest-card">
+                                <div class="interest-icon">
+                                    <i class="fas fa-microchip"></i>
+                                </div>
+                                <h4>Tecnología</h4>
+                                <p>Explorar nuevas herramientas y tendencias tecnológicas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+            <!-- PROYECTOS -->
+            <section id="proyectos" class="section alt-section">
+                <div class="section-header scroll-animate">
+                    <h2 class="section-title">Proyectos</h2>
+                    <div class="section-underline"></div>
+                </div>
+                <div class="section-content scroll-animate">
+                    <p class="section-intro">
+                        A lo largo de mi aprendizaje he realizado distintos proyectos,
+                        tanto académicos como personales, entre ellos:
+                    </p>
 
-        let particles = [];
-        let mouse = { x: null, y: null, radius: 120 };
+                    <!-- LISTA DE PROYECTOS -->
+                    <div class="projects-list">
+                        <ul class="project-traditional">
+                            <li class="project-item">
+                                <i class="fas fa-check-circle"></i>
+                                Páginas web personales con diseño moderno y modo oscuro
+                            </li>
+                            <li class="project-item">
+                                <i class="fas fa-check-circle"></i>
+                                Sitios web temáticos (cafeterías, bandas musicales, dulcerías)
+                            </li>
+                            <li class="project-item">
+                                <i class="fas fa-check-circle"></i>
+                                Programas en lenguaje C con menús y estructuras de control
+                            </li>
+                            <li class="project-item">
+                                <i class="fas fa-check-circle"></i>
+                                Animaciones, efectos RGB y fondos interactivos con JavaScript
+                            </li>
+                        </ul>
+                    </div>
 
-        window.addEventListener("mousemove", e => {
-            mouse.x = e.x;
-            mouse.y = e.y;
-        });
-
-        window.addEventListener("resize", () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-        });
-
-        class Particle {
-            constructor() {
-                this.x = Math.random() * canvas.width;
-                this.y = Math.random() * canvas.height;
-                this.size = Math.random() * 2 + 1;
-                this.speedX = Math.random() * 1 - 0.5;
-                this.speedY = Math.random() * 1 - 0.5;
-            }
-            update() {
-                this.x += this.speedX;
-                this.y += this.speedY;
-
-                let dx = mouse.x - this.x;
-                let dy = mouse.y - this.y;
-                let dist = Math.sqrt(dx * dx + dy * dy);
-
-                if (dist < mouse.radius) {
-                    this.x -= dx / 10;
-                    this.y -= dy / 10;
-                }
-            }
-            draw() {
-                ctx.fillStyle = "#00ffc8";
-                ctx.beginPath();
-                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                ctx.fill();
-            }
-        }
-
-        function init() {
-            particles = [];
-            for (let i = 0; i < 140; i++) {
-                particles.push(new Particle());
-            }
-        }
-
-        function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            particles.forEach(p => {
-                p.update();
-                p.draw();
-            });
-            requestAnimationFrame(animate);
-        }
-
-        init();
-        animate();
-    </script>
-
-</body>
-
-</html>
-
+                    <!-- GRID DE PROYECTOS -->
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <i class="fas fa-desktop"></i>
+                                <div class="project-overlay">
+                                    <span>Portafolio Personal</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Portafolio Personal</h3>
+                                <p>Sitio web con diseño moderno, modo oscuro y partículas interactivas.</p>
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <i class="fas fa-coffee"></i>
+                                <div class="project-overlay">
+                                    <span>Sitio de Cafetería</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Sitio de Cafetería</h3>
+                                <p>Página web completa para cafetería con menú y reservaciones.</p>
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <i class="fas fa-music"></i>
+                                <div class="project-overlay">
+                                    <span>Web Musical</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Sitio de Banda Musical</h3>
+                                <p>Web promocional para banda música con galería y eventos.</p>
+                                <div class="project-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="project-image">
+                                <i class="fas fa-terminal"></i>
+                                <div class="project-overlay">
+                                    <span>Programas en C</span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Programas en lenguaje C</h3>
+                                <p>Sistema de menú interactivo con estructuras de control.</p>
+                                <div class="project-tags">
+                                    <span>C</span>
+                                    <span>Estructuras</span>
+                                </div>
+                            </div>
+                        </div>
+                    
