@@ -1090,3 +1090,60 @@ footer {
         font-size: 1.2rem;
     }
 }
+/* ========================================
+   RESPONSIVE AUTOMÁTICO
+   ======================================== */
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* MÓVIL */
+@media (max-width: 768px) {
+
+    /* HAMBURGUESA */
+    .nav-toggle {
+        display: flex !important;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    /* MENÚ OCULTO */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background: #050709;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        transition: 0.3s;
+    }
+
+    /* CUANDO SE ABRE */
+    .nav-menu.active {
+        right: 0;
+    }
+
+    /* AJUSTES GENERALES */
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 80px 15px;
+    }
+}
