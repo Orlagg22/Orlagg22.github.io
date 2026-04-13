@@ -1117,3 +1117,30 @@ footer {
         right: 20px;
     }
 }
+@media (max-width: 768px) {
+
+    .nav-toggle {
+        display: flex !important;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: #050709;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+}
