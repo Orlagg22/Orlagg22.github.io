@@ -1280,3 +1280,9 @@ footer {
         flex-wrap: wrap;
     }
 }
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+    justify-content: center; /* centra todo el grid */
+    gap: 30px;
+}
