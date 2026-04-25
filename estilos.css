@@ -1252,3 +1252,31 @@ footer {
         align-items: center;
     }
 }
+/* ========================================
+   FIX HERO PC / LAPTOP
+======================================== */
+
+@media (min-width: 1024px) {
+
+    .hero-content {
+        max-width: 900px; /* limita el ancho */
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hero-description,
+    .intro-text {
+        max-width: 700px; /* evita texto largo horizontal */
+        margin: 0 auto 20px auto;
+        line-height: 1.8;
+    }
+
+    /* Botones centrados */
+    .hero-buttons,
+    .hero-content div {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+}
