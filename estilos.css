@@ -1286,22 +1286,3 @@ footer {
     justify-content: center; /* centra todo el grid */
     gap: 30px;
 }
-/* ========================================
-   FIX GRID HABILIDADES (CENTRADO LENGUAJES PARA LAPTOPS)
-======================================== */
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-/* Centra cuando queda 1 solo */
-.skills-grid .skill-item:last-child:nth-child(3n + 1) {
-    grid-column: 2;
-}
-
-/* Centra cuando quedan 2 en la última fila */
-.skills-grid .skill-item:last-child:nth-child(3n + 2) {
-    grid-column: 2 / 4;
-}
