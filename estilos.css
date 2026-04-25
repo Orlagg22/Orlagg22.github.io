@@ -1218,3 +1218,37 @@ footer {
         font-size: 2rem;
     }
 }
+/* ========================================
+   TEXTO CENTRADO SOLO EN PC / LAPTOP
+======================================== */
+
+@media (min-width: 1024px) {
+
+    body {
+        text-align: center;
+    }
+
+    /* Asegura que todo el contenido textual herede el centrado */
+    p, h1, h2, h3, h4, h5, h6, span, a, li {
+        text-align: center;
+    }
+
+    /* Ajuste extra para secciones */
+    .section-content,
+    .about-text,
+    .contact-text,
+    .intro-text {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Centrar elementos flex */
+    .nav-menu,
+    .about-stats,
+    .social-links,
+    .footer-links {
+        justify-content: center;
+        align-items: center;
+    }
+}
